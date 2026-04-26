@@ -1,0 +1,84 @@
+/* Fundo da página */
+html {
+    background-image: url(imagem/top-guerra.jpg); /* imagem de fundo */
+    background-repeat: no-repeat; /* não repetir a imagem */
+    background-size: cover; /* cobrir a tela inteira */
+}
+
+/* Centraliza tudo na tela */
+body {
+    display: flex; /* ativa flexbox */
+    justify-content: center; /* centraliza horizontal */
+    align-items: center; /* centraliza vertical */
+    height: 100vh; /* altura total da tela */
+}
+
+/* Caixa do login */
+.box {
+    background-color: rgba(68, 56, 14, 0.436); /* cor com transparência */
+    padding: 40px; /* espaço interno */
+    width: 400px; /* largura fixa */
+    text-align: center; /* centraliza texto */
+    color: rgb(251, 19, 7); /* cor do texto */
+    border-radius: 25px; /* borda arredondada */
+    border: 10px solid rgb(163, 30, 30); /* borda grossa */
+    margin-left: 500px;    
+    backdrop-filter: blur(10px); /* efeito vidro (moderno) */
+}
+
+/* Título */
+.login {
+    background-color: black;
+    padding: 20px;
+    border-radius: 25px;
+
+    background-color: rgba(0, 0, 0, 0.464);
+    backdrop-filter: blur(10px); /* efeito vidro (moderno) */
+}
+
+/* Organização dos campos */
+.campo {
+    display: flex; /* coloca label e input lado a lado */
+    align-items: center; /* alinha vertical */
+    justify-content: center; /* centraliza */
+    gap: 10px; /* espaço entre label e input */
+    margin: 10px 0; /* espaço entre linhas */
+    font-size: 20px;
+}
+
+/* Texto do label */
+label {
+    width: 90px; /* largura fixa → alinha todos */
+    text-align: right; /* encosta no input */
+    color: red;
+}
+
+/* Inputs */
+input {
+    width: 200px; /* largura */
+    padding: 8px; /* espaço interno */
+    border-radius: 20px; /* arredondado */
+    text-align: center;
+}
+
+/* Cor do placeholder */
+input::placeholder {
+    color: black;
+}
+
+/* Botão */
+button {
+    color: brown;
+    border-radius: 20px;
+    border: 2px solid brown;
+    width: 125px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
